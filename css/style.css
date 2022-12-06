@@ -1,0 +1,288 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* navigation bar logo and image */
+#logo{
+    margin: 0px 34px;
+
+}
+#logo img{
+    /* height: 56px; */
+    margin: 3px 6px;
+
+}
+
+/* navigation bar list styling */
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:.4;
+    
+}
+#navbar ul li{
+    /* color: red; */
+    list-style: none;
+    font-size:1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+
+
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../images/pexels-pixabay-326281.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:.59;
+    top: 0;
+    left: 0;
+    
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: cursive;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Combo', cursive;
+
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    /* border: 2px solid brown; */
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    background-color: #ead6d633;
+
+}
+#services .box img{
+    height: 160px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* clients section */
+#client-section{
+    /* height: 314px; */
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+     background: url('../images/pexels-ella-olsson-1640770.jpg'); 
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: .6;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+.client-item{
+    padding: 40px;
+    /* margin: auto; */
+}
+/* contact section */
+#contact{
+    
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/pexels-alex-andrews-821754.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding:.5rem;
+    border-radius:10px;
+    font-size:1.1rem;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: cursive;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20p;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: cursive;
+}
+.h-secondary{
+    font-size: 2.rem;
+    padding: 12px;
+    font-family: cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgba(189, 125, 125, 0.776);
+    color: black ;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #eee6d9;
+    overflow: hidden;
+    width: 100%;
+    border-radius:20px;
+    height: 0;
+    transition: .5s ease;
+    opacity:0;
+  }
+  
+  .box:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    opacity: 0.8;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    /* font-weight: bold; */
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .btn1{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgba(176, 182, 64, 0.776);
+    color: black ;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+
+  .btn2{
+    /* position: absolute; */
+    padding: 11px 15px;
+    border: 1px solid  red;
+    background-color:black;
+    color:white ;
+    font-weight: bold;
+    /* margin-top: -10000px; */
+    margin: 6px;
+    /* margin-right: 400px; */
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn2:hover{
+    border:2px solid red;
+    /* border-bottom:4px solid red; */
+    transition: .2s ease-in-out;
+}
+
+
+
+  .box{
+    position: relative;
+  }
