@@ -58,8 +58,9 @@ html{
 
 }
 #navbar ul li a:hover{
-    color: black;
+    color: red;
     background-color: white;
+    font-weight: bold;
     
 
 
@@ -144,14 +145,18 @@ html{
 #clients img{
     height: 124px;
 }
+#clients img:hover{
+    transform: scale(1.04);
+}
 .client-item{
     padding: 40px;
     /* margin: auto; */
 }
 /* contact section */
 #contact{
-    
     position: relative;
+    /* align-items: center;
+    justify-content: center; */
 }
 #contact::before{
     content: "";
@@ -201,7 +206,7 @@ footer{
     padding: 12px;
     font-family: cursive;
 }
-.btn{
+/* .btn{
     padding: 6px 20px;
     border: 2px solid black;
     background-color: rgba(189, 125, 125, 0.776);
@@ -211,6 +216,27 @@ footer{
     font-size: 1.2rem;
     border-radius: 11px;
     cursor: pointer;
+} */
+.btn{
+    padding: 10px 20px;
+    border: none;
+    background-color:rgb(225 63 13);
+    color: white ;
+    font-weight: bold;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    /* margin-left: 133px; */
+}
+.btn a{
+    color: red;
+}
+
+.btn a:hover,.btn:hover{
+    background-color: rgb(65, 39, 39);
+    color:  rgb(247, 112, 22);
+    transition: .2s ease;
 }
 .center{
     text-align: center;
@@ -286,3 +312,24 @@ footer{
   .box{
     position: relative;
   }
+
+  .btn3{
+    display:grid;
+    margin:15px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color:rgb(225 63 13);
+    color: white ;
+    font-weight: bold;
+    /* margin: 17px; */
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    
+  }
+  .btn3:hover{
+    background-color: rgb(65, 39, 39);
+    color:  rgb(247, 112, 22);
+    transition: .2s ease;
+}
